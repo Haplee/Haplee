@@ -1,0 +1,116 @@
+<!--1.Crea la estructura de un libro HTML de una sola página con 10 capítulos. Debes situar en la parte superior el índice. El contenido puede ser de prueba con texto genérico.
+Es obligatorio que al clicar en los enlaces la página automáticamente suba y baje en función de sus enlaces. Al final de cada capítulo debe haber un enlace que nos lleve al inicio del
+documento y después de él una barra que separe cada capítulo del siguiente. Cada capítulo debe hacerse con un article y dentro de él un encabezado de segundo nivel y el resto del texto un párrafo.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO 8859-1">
+        <title>INDICE DEL LIBRO DE HTML</title>
+    </head>
+    <body>
+        <all>
+            <h1>INDICE DEL LIBRO DE HTML</h1>
+            <ol>
+                <li><a href="#capitulo1">Capítulo 1</a></li>
+                <li><a href="#capitulo2">Capítulo 2</a></li>
+                <li><a href="#capitulo3">Capítulo 3</a></li>
+                <li><a href="#capitulo4">Capítulo 4</a></li>
+                <li><a href="#capitulo5">Capítulo 5</a></li>
+                <li><a href="#capitulo6">Capítulo 6</a></li>
+                <li><a href="#capitulo7">Capítulo 7</a></li>
+                <li><a href="#capitulo8">Capítulo 8</a></li>
+                <li><a href="#capitulo9">Capítulo 9</a></li>
+                <li><a href="#capitulo10">Capítulo 10</a></li>
+            </ol>
+        </all>
+         <!--2. Al inicio del párrafo del capítulo 1 hay que indicarle al lector una aclaración con un elemento details.-->
+        <h2 id="capitulo1">Capítulo 1</h2>
+        <details>
+            <summary>Nota del lector</summary>
+            Hola Lope =)
+        </details>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lorem semper, imperdiet nisl eu, dapibus mi. Duis vel velit purus. Maecenas consequat dolor eu tempor sollicitudin. Nunc ultrices pulvinar tellus, vel lobortis dolor. Sed non ligula at odio faucibus sodales. Aliquam a finibus tellus. In id felis posuere, aliquet tellus id, dignissim libero. Maecenas pulvinar elit at tincidunt condimentum. Nunc sit amet enim vel sem venenatis ornare. Mauris auctor nunc sed odio laoreet fringilla. Integer gravida in dui a vestibulum. Vestibulum tortor est, scelerisque vel ultricies a, pharetra posuere velit. Nunc dictum metus sed mauris dictum, ut iaculis mauris lacinia. Duis vestibulum vestibulum metus, tempus dapibus arcu.</p>
+        <a href="#capitulo1">Subir</a>
+        <hr>
+        <!--3. El capítulo 2 debe contener una lista anidada desordenada de 3 elementos dentro de una lista ordenada de 5 elementos.-->
+        <h2 id="capitulo2">Capítulo 2</h2>
+        <p>Maecenas posuere aliquam interdum. Phasellus consequat congue metus, at efficitur arcu iaculis sit amet. Aliquam erat volutpat. Mauris varius massa diam, eget convallis quam porttitor in. Proin suscipit, massa ac bibendum rhoncus, ante ex tincidunt leo, non varius mauris orci at nisl. Vivamus suscipit rhoncus tellus sit amet fringilla. Aliquam ullamcorper, lectus non sodales mattis, tortor ipsum sagittis elit, ut varius nunc tortor a mi. Sed sagittis dapibus nisl sit amet maximus. Donec cursus sed odio quis accumsan. Nunc accumsan viverra porttitor.</p>
+        <ol>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+                <ul>
+                    <li>tres uno</li>
+                    <li>tres dos</li>
+                    <li>tres tres</li>
+                </ul>
+            <li>cuatro</li>
+            <li>cinco</li>
+        </ol>
+        <a href="#capitulo2">Subir</a>
+        <hr>
+       <!--4. El capítulo 3 se cierra con una interesante tabla que debes programar para que aparezca tal y como se muestra a continuación-->
+        <h2 id="capitulo3">Capítulo 3</h2>
+        <p>Suspendisse potenti. Donec mollis turpis eros, vel feugiat arcu facilisis eu. Integer vel placerat diam. Praesent velit arcu, consequat vel nibh ac, auctor ornare mi. Pellentesque vel tortor sit amet nunc consectetur rutrum. Etiam scelerisque risus ipsum, pulvinar suscipit ipsum venenatis nec. Suspendisse et sem eget lorem convallis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum maximus malesuada tortor. Nulla facilisi. Aenean lacinia magna quis quam sollicitudin laoreet. Phasellus in ante nisl.</p>
+        <table>
+           <caption>Una tabla de ejemplo</caption>
+           <thead>
+            <tr>
+           <th>C1</th>
+            <th>C2</th>
+            <th>C3</th>
+            <th>C4</th>
+            <th>C5</th>
+            </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>I</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <th>Pie C1</th>
+                    <th>Pie C2</th>
+                    <th>Pie C3</th>
+                    <th>Pie C4</th>
+                    <th>Pie C5</th>
+                </tr>
+            </tfoot>
+            
+        </table>
+        <a href="#capitulo3">Subir</a>
+        <hr>
+        <h2 id="capitulo4">Capítulo 4</h2>
+        <p>Nulla dolor urna, imperdiet id orci eget, maximus posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique fringilla nunc in fringilla. Maecenas turpis turpis, dapibus varius finibus nec, auctor non leo. Aenean convallis aliquam orci in elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sollicitudin cursus tellus sit amet gravida. Donec iaculis nulla convallis faucibus faucibus.</p>
+        <a href="#capitulo4">Subir</a>
+        <hr>
+        <h2 id="capitulo5">Capítulo 5</h2>
+        <p>Praesent aliquam, risus sit amet rhoncus placerat, ipsum mi congue turpis, at ultrices dui lacus eget lacus. Maecenas et congue sapien. Morbi elementum sapien ac nisl tempor tincidunt sed a erat. Cras non mi sed tortor maximus feugiat vitae et dui. Morbi pulvinar dui non elementum laoreet.</p>
+        <a href="#capitulo5">Subir</a>
+        <hr>
+        <h2 id="capitulo6">Capítulo 6</h2>
+        <p>Nam quis magna sem. Aenean consequat est eu est fringilla, in auctor eros laoreet. Donec pretium consequat enim, ut scelerisque neque semper vitae. Etiam sit amet nibh commodo, gravida erat non, aliquet sem. Donec tempus imperdiet ipsum, a sagittis est ullamcorper ac. Curabitur tristique lacus id iaculis facilisis. Donec finibus pellentesque cursus. Vivamus non pulvinar odio. Mauris laoreet dignissim purus ut sodales. Sed libero eros, imperdiet a vehicula nec, gravida in dolor.</p>
+        <a href="#capitulo6">Subir</a>
+        <hr>
+        <h2 id="capitulo7">Capítulo 7</h2>
+        <p>Praesent elit mauris, maximus quis tellus eu, eleifend placerat dolor. Vestibulum pretium luctus elementum. Nam finibus luctus est, ut laoreet magna varius vel. Nullam nibh ex, bibendum quis mi feugiat, elementum pellentesque risus. Morbi vitae pretium leo.</p>
+        <a href="#capitulo7">Subir</a>
+        <hr>
+        <h2 id="capitulo8">Capítulo 8</h2>
+        <p>Proin ac bibendum dui. Morbi eu felis neque. Aenean ut posuere odio, vel consectetur felis. Morbi tincidunt, felis ac vestibulum sollicitudin, nisl diam facilisis lorem, in pellentesque ante nunc ac augue. Suspendisse et ipsum sed dui pellentesque ultrices eu non lorem. Sed accumsan felis nec nulla ultrices egestas. Morbi mollis erat ac mauris rhoncus, convallis laoreet sem vulputate. Integer ac pharetra odio.</p>
+        <a href="#capitulo8">Subir</a>
+        <hr>
+        <h2 id="capitulo9">Capítulo 9</h2>
+        <p>Praesent eget felis sagittis, pellentesque quam a, posuere metus. Cras euismod, ligula eget viverra condimentum, augue lacus tincidunt dolor, ac dictum mi ante quis nisi. Vestibulum a mattis quam. Mauris posuere, nisl eu iaculis pretium, justo turpis pharetra ipsum, a scelerisque diam ipsum vel odio. In auctor imperdiet dolor, a pretium enim cursus ac. Morbi urna purus, imperdiet ac libero ut, tristique facilisis ex. Ut imperdiet diam ac elementum commodo. Ut ac ipsum sed magna bibendum ullamcorper. Vivamus tincidunt, tellus dapibus tincidunt volutpat, justo elit luctus urna, quis bibendum elit sapien et neque. </p>
+        <a href="#capitulo9">Subir</a>
+        <hr>
+        <h id="capitulo10"2>Capítulo 10</h2>
+        <p>Phasellus facilisis eleifend sollicitudin. In auctor nec magna quis rhoncus. Morbi sit amet diam nulla. Curabitur tincidunt ligula at erat viverra, a convallis dolor vulputate. Vivamus ullamcorper condimentum accumsan. Aliquam ex lacus, tincidunt quis fermentum eget, ultricies at libero. Proin massa libero, commodo id tortor id, imperdiet varius mi.</p>
+        <a href="#capitulo10">Subir</a>
+        <hr>
+        <!--ᕙ(`▿´)ᕗ-->
+    </body>
+</html>
+
